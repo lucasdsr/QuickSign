@@ -5,8 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage.tsx";
 import { Login } from "./pages/Login/Login.tsx";
 
-import "./index.css";
-
 import { MainLayout } from "./components/MainLayout/MainLayout.tsx";
 import { StrictMode } from "react";
 
@@ -27,6 +25,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
-    {/* // <div>ola</div> */}
   </StrictMode>
 );

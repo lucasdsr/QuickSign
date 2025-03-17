@@ -5,10 +5,10 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../assets/theme.ts";
 
 export const MainLayout = (): ReactElement => (
-  // <ThemeProvider theme={theme}>
-  <div>
-    <h1>MainLayout</h1>
-    <Outlet />
-  </div>
-  // </ThemeProvider>
+  <ThemeProvider theme={theme}>
+    <div>
+      <h1>MainLayout</h1>
+      <Outlet />
+    </div>
+  </ThemeProvider>
 );
