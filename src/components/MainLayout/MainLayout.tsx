@@ -4,11 +4,12 @@ import { ThemeProvider } from "styled-components";
 
 import { theme } from "../../assets/theme.ts";
 
+import * as S from "./styles.ts";
+
 export const MainLayout = (): ReactElement => (
   <ThemeProvider theme={theme}>
-    <div>
-      <h1>MainLayout</h1>
+    <S.MainContainer>
       <Outlet />
-    </div>
+    </S.MainContainer>
   </ThemeProvider>
 );

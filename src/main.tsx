@@ -8,6 +8,8 @@ import { Login } from "./pages/Login/Login.tsx";
 import { MainLayout } from "./components/MainLayout/MainLayout.tsx";
 import { StrictMode } from "react";
 
+import "./index.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/login",
+        index: true,
         element: <Login />,
       },
     ],
