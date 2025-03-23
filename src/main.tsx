@@ -1,12 +1,13 @@
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "./pages/ErrorPage.tsx";
-import { Login } from "./pages/Login/Login.tsx";
-
 import { MainLayout } from "./components/MainLayout/MainLayout.tsx";
-import { StrictMode } from "react";
+
+import { Login } from "./pages/Login/Login.tsx";
+import { Register } from "./pages/Register/Register.tsx";
 
 import "./index.css";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },
