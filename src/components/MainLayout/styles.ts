@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-export const MainContainer = styled.div`
+export const MainContainer = styled(Box)`
   display: flex;  
   align-items: center;
   justify-content: center;  
@@ -10,5 +11,5 @@ export const MainContainer = styled.div`
   height: 100vh;
 
   color: white;
-  background-color: ${(props) => props.theme.colors.bground}
+  background-color: ${({ theme}) => theme.palette.secondary.light}
 `

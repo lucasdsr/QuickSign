@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { Outlet } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "@mui/material/styles";
 
 import { theme } from "../../assets/theme.ts";
 
