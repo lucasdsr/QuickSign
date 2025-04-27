@@ -5,7 +5,7 @@ import { RegisterForm } from "./RegisterForm";
 export const Register = () => (
   <div id="register-page">
     <FormsBox>
-      <Box>
+      <Box sx={{ padding: "0px 24px" }}>
         <span style={{ fontSize: "36px", fontWeight: 600 }}>
           Create an account
         </span>{" "}
