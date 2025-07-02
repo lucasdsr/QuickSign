@@ -1,14 +1,28 @@
-const colors = {
-  primary: '#7C23B8',
-  secondary: '#2F2139',
-  bground: '#6B5D7A',
+import { createTheme } from '@mui/material/styles';
 
-  success: '#32CD32',
-  error: '#FF4500',
-  warning: '#FFA500',
-  info: '#FFA500'
-}
+export const theme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: {
+      main: '#7C23B8',
+    },
+    secondary: {
+      dark: '#2F2139',
+      main: '#6B5D7A',
+      light: '#6B5D7A',
+    },
+    success: {
+      main: '#32CD32'
+    },
+    error: {
+      main: '#FF4500'
+    },
+    warning: {
+      main: '#FFA500'
+    },
+    info: {
+      main: '#FFA500'
+    }
 
-export const theme = {
-  colors
-}
+  },
+});
