@@ -26,7 +26,6 @@ export const RegisterForm = () => {
   const form = useForm<IFormFields>({ reValidateMode: "onChange" });
 
   const errors = useMemo(() => form.formState.errors, [form]);
-  console.log("errors", errors);
 
   const onFinish: SubmitHandler<IFormFields> = (values) =>
     console.log("values", values);
